@@ -1,13 +1,16 @@
+/*Aplicando o responsivo
+Unidades relativas - aplicado em: 04/05/2021
+*/
 body{
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     line-height: 1.5;
     color: #444;
-    font-size: 100%;
+    font-size: 62.5%; /*Gambiarra*/
 }
 
 a{
     color: #00ccff;
-    font-size: 16px;
+    font-size: 1.6em; /* 16px */
     text-decoration: none;
 }
 /* estilização do comportamento do mouse*/
@@ -16,8 +19,8 @@ a:hover{
 
 }
 
-.Container{
-    max-width:1128px;
+.container{
+    max-width:1128px; 
     margin: 0 auto;
 }
 
@@ -31,17 +34,17 @@ embed {
 header{
     width: 100%;
     height: 48px;
-    margin-top: 36px;
-    margin-bottom: 36px;
+    margin-top: 3.6em; /* 36px */
+    margin-bottom: 3.6em;/* 36px */
 }
-.menu{
+.marca{
     float: left;
-    width: 234px;
+    width: 20.74%; /* 234px - objeto / 1128px contexto */
 }
 
 nav{
     float: right;
-    width: 840;
+    width: 74.47%; /* 840px objeto / 1128px contexto /// obj/contexto * 100 = resultado*/
 }
 
 nav ul{
@@ -49,11 +52,11 @@ nav ul{
 
 }
 nav li{
-    font-size: 12px;
+    font-size: 1.2em; /*12px*/
     /* faz os menus aparecerem um do lado do outro*/
     display: inline-block;
-    margin-left: 20px;
-    margin-top: 10px;
+    margin-left: 2.0em; /*20px*/
+    margin-top: 1.0em; /*10px*/
 }
 
 nav li a{
@@ -63,8 +66,9 @@ nav li a{
 .banner{
     background: url('../site_webdesign/img/banner.jpg');
     height: 450px;
-    margin-bottom: 48px;
+    margin-bottom: 4.8em; /*48px*/
     position: relative;
+    width: 100%;
 
 }
 
@@ -72,51 +76,51 @@ nav li a{
     position: absolute;
     top: 48px;
     background: rgba(0,0,0,0.6);
-    width: 480px;
-    padding: 24px 10px 24px 40px ; /* top right bottom left*/
+    width: 42.55%; /* 480px objeto / 1128px contexto /// obj/contexto * 100 = resultado*/
+    padding: 2.4em 1.0em 2.4em 4.0em ; /* 24px-top / 10px-right / 24px-bottom / 40px-left*/
     display: center;
 }
 
 h1{
-    font-size: 40px;
+    font-size: 4.0em; /*40px*/
     color: #fff;
     font-weight: 200;
-    margin-top: 0;
-    margin-bottom: 0;
+    margin-top: 0em;
+    margin-bottom: 0em;
 }
 .descrição{
     text-align: center;
 }
 
-.Destaque{
-    font-size: 18px;
+.destaque{
+    font-size: 1.8em; /*18px*/
     color: #FFF;
     font-weight: 200;
 }
 
-.Coluna{
-    width: 315px;
+.coluna{
+    width: 23.4%;/* 264px objeto / 1128px contexto /// obj/contexto * 100 = resultado*/
     float: left;
-    margin-right: 24px;
+    margin-right: 2.13%; /*18px objeto / 1128px contexto /// obj/contexto * 100 = resultado*/
 }
-.Coluna:last-child{
+.coluna:last-child{
     margin-right: 0;
 }
-Coluna p{
+coluna p{
     text-align: justify;
-    font-size: 16px;
+    font-size: 1.6em; /*16px*/
 }
 
 h2{
-    font-size: 24px;
+    font-size: 2.4em; /*24px*/
 }
 
 footer{
     width: 100%;
-    margin-top: 24px;
-    margin-bottom: 24px;
+    margin-top: 2.4em; /*24px*/
+    margin-bottom: 2.4em; /*24px*/
 }
 .footer{
-    font-size: 10px;
-    margin-bottom: 0;
+    font-size: 1.0em; /*10px*/
+    margin-bottom: 0em; 
 }
